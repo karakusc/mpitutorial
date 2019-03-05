@@ -1,0 +1,1 @@
+mpirun -np 64 -hostfile hosts -mca coll_tuned_use_dynamic_rules 1 -mca btl_tcp_if_exclude docker0,lo -mca coll_tuned_allreduce_algorithm 4 -mca pml ob1 -mca btl ^openib ./red $1
